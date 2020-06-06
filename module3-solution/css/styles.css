@@ -1,12 +1,223 @@
-body{
-font-size: 16px;
-font-family: 'Raleway', sans-serif;
-text-align: center;
-color: white;
+body {
+  font-size: 16px;
+  color:#89134C;
+  background-color: #440C27;
+  font-family: 'Arimo', sans-serif;
 }
-.container-fluid
-{
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMyjCiiDH2cDQszUKEeBNm2HeeDRrGzugJRlXXIm24F_dxuezu&usqp=CAU);
-	background-color: yellow;
 
+#header-nav {
+  background-color: #EED7D2;
+  border-radius: 0;
+  border: 0;
+}
+#logo-img{
+	background-image:url('../tomato-sauce.png') ;
+	 width: 65px;
+  height: 65px;
+  margin: 5px 10px 5px 0;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+ 
+}
+.navbar-brand h1
+{
+	
+	color:red;
+	font-style: italic;
+	font-family: 'Arimo', sans-serif;
+	font-size: 2em;
+	 text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { 
+  color: black;
+  font-family: cursive;
+  font-size: 1em;
+  margin-top: 10px;
+  font-style: italic;
+}
+.navbar-brand p span { 
+  vertical-align: middle;
+}
+
+.container h1
+{
+	color: #EBA4C6;
+	font-size: 2em;
+	font-style: italic;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Arimo',sans-serif;
+}
+.row
+{
+	text-align: center;
+}
+
+.row span{
+	font-family: 'Arimo',sans-serif;
+	font-style: italic bold;
+	font-size: 1.6em;
+	color:#F1340E;
+	
+}
+
+.row div
+{
+
+	height :700px;
+	overflow: auto;
+	}
+.row div div
+	{
+		margin: 20px 0 20px 0;
+		background-color: white;
+	}
+.navbar-nav .nav-item li
+{
+	color:#CB3F23;
+	
+
+}
+.navbar-nav .nav-item .nav-link a.hover{
+	text-decoration: none;
+ background-color: : #E7E7E7;
+  color:black;
+}
+.icon-bar {
+  margin-bottom:2px;
+  display: block;
+  width: 22px;
+  height: 5px;
+  background-color: #761352;
+  border-radius: 1px;
+}
+.navbar-nav .nav-item li a.hover, .nav li a.active
+{
+text-decoration: none;
+ background-color: : #E7E7E7;
+  color:black;
+}
+
+#nav-list {
+  margin-top: 10px;
+
+}
+#nav-list a {
+  color: #951C49;
+  font-size: 0.7em;
+  text-align: center;
+
+}
+
+
+
+
+
+.btn span a, .btn span a.hover
+{
+	color:#F06347;
+	margin-left: 50px;
+}
+button
+
+{
+ display: block;
+	float:right;
+	align-items: flex-start;
+	align-self: right;
+	position: relative;
+	bottom:0;
+	right:0;
+}
+ 
+
+@media (min-width: 1200px)
+ {
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../tomato-sauce.png');
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .row{
+  
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .row {
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+  .row div
+  {
+  	height:500 px;
+  	overflow: auto;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 3vw;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 3vw;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #F1340E;
+    color: white;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
 }

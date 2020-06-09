@@ -21,6 +21,7 @@ Hello Paula
 Hello Laura
 Good Bye Jim
 
+
 WARNING!!! WARNING!!!
 The code does NOT currently work! It is YOUR job to make it work
 as described in the requirements and the steps in order to complete this
@@ -28,12 +29,13 @@ assignment.
 WARNING!!! WARNING!!!
 
 */
+(function(window) {
 
 // STEP 1:
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
-(function(window) {
+
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -42,7 +44,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (var i in names) {
+for (var i =0;i<names.length;i++) {
 
 
   // STEP 11:
@@ -58,7 +60,7 @@ for (var i in names) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (firstLetter=='j') {
+  if (firstLetter==='j') {
     window.byeSpeaker.speak(names[i]);
   } else 
     window.helloSpeaker.speak(names[i]);

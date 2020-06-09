@@ -60,8 +60,8 @@ for (var i =0;i<names.length();i++) {
   // name in the loop.
   if (firstLetter=='j') {
     window.byeSpeaker.speak(names[i]);
-  } else {
+  } else 
     window.helloSpeaker.speak(names[i]);
-  }
+  
 }
 })(window);
